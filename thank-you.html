@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You! | ESL with Brian</title>
+<meta name="robots" content="noindex">
+
+<!-- ============================================================
+  GOOGLE ADS CONVERSION TRACKING
+  STEP 1: Replace AW-XXXXXXXXX/YYYYYYYYYYY with your real IDs
+  from Google Ads → Tools → Conversions → after creating a
+  "Website" conversion action called "Form Submission"
+  ============================================================ -->
+<!-- Global site tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXXXX');
+
+  // Fire conversion event when this page loads
+  gtag('event', 'conversion', {
+    'send_to': 'AW-XXXXXXXXX/YYYYYYYYYYY',
+    'value': 100.0,
+    'currency': 'PHP'
+  });
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --teal: #0EB8A8; --teal-dark: #099489; --teal-light: #E0F7F5;
+    --navy: #0D2137; --white: #FFFFFF; --off-white: #F6FAFA;
+    --text: #1C2B38; --text-muted: #5A7080;
+  }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--off-white);
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+  }
+
+  /* TOP BAR */
+  .topbar {
+    background: var(--teal); color: var(--white);
+    text-align: center; padding: 10px 5%;
+    font-size: 0.88rem; font-weight: 600;
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+    flex-wrap: wrap;
+  }
+  .topbar a { color: var(--white); text-decoration: none; font-weight: 700; }
+  .topbar-phone {
+    display: inline-flex; align-items: center; gap: 7px;
+    background: rgba(255,255,255,0.2);
+    padding: 5px 14px; border-radius: 100px;
+    font-size: 0.95rem; font-weight: 700;
+  }
+
+  /* NAV */
+  nav {
+    background: var(--navy);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 5%;
+    border-bottom: 1px solid rgba(14,184,168,0.2);
+  }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--white); }
+  .nav-logo span { color: var(--teal); }
+
+  /* MAIN */
+  main {
+    flex: 1;
+    display: flex; align-items: center; justify-content: center;
+    padding: 60px 5%;
+  }
+  .thank-you-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 56px 48px;
+    max-width: 560px; width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(13,33,55,0.1);
+    border: 1.5px solid #E5EFF2;
+    animation: popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275) both;
+  }
+  @keyframes popIn { from{opacity:0;transform:scale(0.9) translateY(20px)} to{opacity:1;transform:scale(1) translateY(0)} }
+
+  .checkmark-wrap {
+    width: 80px; height: 80px; border-radius: 50%;
+    background: var(--teal-light);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 28px;
+    animation: scaleIn 0.4s 0.2s cubic-bezier(0.175,0.885,0.32,1.275) both;
+  }
+  @keyframes scaleIn { from{transform:scale(0)} to{transform:scale(1)} }
+  .checkmark { font-size: 2.2rem; }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; font-weight: 900;
+    color: var(--navy); margin-bottom: 14px;
+  }
+  .sub {
+    font-size: 1rem; color: var(--text-muted); line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  .sub strong { color: var(--text); }
+
+  .next-steps {
+    background: var(--off-white);
+    border-radius: 12px; padding: 24px;
+    text-align: left; margin-bottom: 28px;
+  }
+  .next-steps h3 {
+    font-size: 0.85rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px;
+    color: var(--teal); margin-bottom: 14px;
+  }
+  .next-step-item {
+    display: flex; align-items: flex-start; gap: 12px;
+    font-size: 0.92rem; color: var(--text);
+    margin-bottom: 10px; line-height: 1.5;
+  }
+  .next-step-item:last-child { margin-bottom: 0; }
+  .step-dot {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--teal); color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.72rem; font-weight: 700;
+    flex-shrink: 0; margin-top: 1px;
+  }
+
+  .contact-options {
+    display: flex; flex-direction: column; gap: 10px;
+    margin-bottom: 28px;
+  }
+  .contact-btn {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 13px 24px; border-radius: 8px;
+    font-weight: 600; font-size: 0.95rem;
+    text-decoration: none; transition: all 0.2s;
+  }
+  .contact-btn.primary { background: var(--teal); color: var(--white); }
+  .contact-btn.primary:hover { background: var(--teal-dark); }
+  .contact-btn.secondary { background: var(--off-white); color: var(--navy); border: 1.5px solid #DDE8EC; }
+  .contact-btn.secondary:hover { border-color: var(--teal); color: var(--teal); }
+
+  .back-link {
+    color: var(--text-muted); font-size: 0.88rem;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+  }
+  .back-link:hover { color: var(--teal); }
+
+  /* FOOTER */
+  footer { background: var(--navy); color: rgba(255,255,255,0.5); text-align: center; padding: 20px 5%; font-size: 0.82rem; }
+  footer strong { color: var(--teal); }
+
+  @media (max-width: 600px) {
+    .thank-you-card { padding: 36px 24px; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>Questions? Reach Brian directly:</span>
+  <a href="tel:+639516247863" class="topbar-phone">📱 0951-624-7863</a>
+</div>
+
+<nav>
+  <div class="nav-logo">ESL<span>with</span>Brian</div>
+</nav>
+
+<main>
+  <div class="thank-you-card">
+    <div class="checkmark-wrap">
+      <span class="checkmark">✓</span>
+    </div>
+
+    <h1>Message Received!</h1>
+    <p class="sub">
+      Thanks for reaching out, <strong>Brian will reply within 24 hours.</strong>
+      In the meantime, here's what happens next:
+    </p>
+
+    <div class="next-steps">
+      <h3>What Happens Next</h3>
+      <div class="next-step-item">
+        <div class="step-dot">1</div>
+        <span>Brian reviews your message and confirms your preferred session time.</span>
+      </div>
+      <div class="next-step-item">
+        <div class="step-dot">2</div>
+        <span>You'll receive payment instructions via GCash: <strong>0951-624-7863</strong></span>
+      </div>
+      <div class="next-step-item">
+        <div class="step-dot">3</div>
+        <span>Once paid, your coaching session or course access is confirmed. Your ESL journey begins!</span>
+      </div>
+    </div>
+
+    <div class="contact-options">
+      <a href="tel:+639516247863" class="contact-btn primary">📞 Call Brian Now — 0951-624-7863</a>
+      <a href="mailto:macapobrebrian535@gmail.com" class="contact-btn secondary">✉ macapobrebrian535@gmail.com</a>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to ESLwithBrian.com</a>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 <strong>ESL with Brian</strong> · Made with ♥ in the Philippines 🇵🇭</p>
+</footer>
+
+</body>
+</html>
