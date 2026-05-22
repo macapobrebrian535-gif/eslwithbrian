@@ -329,9 +329,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="contact-form-wrap">
         <h4>Send Brian a Message</h4>
-        <form action="https://formspree.io/f/mqejegnr" method="POST">
-  <input type="hidden" name="_next" value="https://eslwithbrian.com/thank-you.html">
-  <input type="hidden" name="_subject" value="New Booking Inquiry — ESLwithBrian.com">
+        <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="4ae165a7-c718-48b5-8a90-d29e40e284e5">
+  <input type="hidden" name="subject" value="New Booking Inquiry — ESLwithBrian.com">
+  <input type="hidden" name="redirect" value="https://eslwithbrian.com/thank-you.html">
+  <input type="hidden" name="from_name" value="ESL with Brian Website">
   <div class="form-row">
     <div class="form-group"><label>Full Name *</label><input type="text" name="name" placeholder="Maria Santos" required></div>
     <div class="form-group"><label>Email Address *</label><input type="email" name="email" placeholder="yourname@email.com" required></div>
@@ -353,6 +355,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <label>Tell Brian about yourself <small style="font-weight:400;color:var(--muted)">(1–2 sentences)</small></label>
     <textarea name="message" placeholder="e.g. I'm a fresh grad and want to teach Chinese students on Classin. I have no experience yet but I'm eager to learn." maxlength="500"></textarea>
   </div>
+  <!-- Honeypot spam protection -->
+  <input type="checkbox" name="botcheck" style="display:none">
   <button type="submit" class="btn-submit">Send Message & Book a Session →</button>
   <p class="form-note">🔒 Your information is safe. Brian replies within 24 hours.</p>
 </form>
