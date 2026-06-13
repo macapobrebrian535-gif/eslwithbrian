@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Received | ESL with Brian</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://eslwithbrian.com/thank-you.html">
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -8,228 +14,373 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N32DR69S');</script>
 <!-- End Google Tag Manager -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You! | ESL with Brian</title>
-<meta name="robots" content="noindex">
 
-<!-- ============================================================
-  GOOGLE ADS CONVERSION TRACKING
-  STEP 1: Replace AW-XXXXXXXXX/YYYYYYYYYYY with your real IDs
-  from Google Ads → Tools → Conversions → after creating a
-  "Website" conversion action called "Form Submission"
-  ============================================================ -->
-<!-- Global site tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-XXXXXXXXX');
-
-  // Fire conversion event when this page loads
-  gtag('event', 'conversion', {
-    'send_to': 'AW-XXXXXXXXX/YYYYYYYYYYY',
-    'value': 100.0,
-    'currency': 'PHP'
-  });
-</script>
-
-
-
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --teal: #0EB8A8; --teal-dark: #099489; --teal-light: #E0F7F5;
-    --navy: #0D2137; --white: #FFFFFF; --off-white: #F6FAFA;
-    --text: #1C2B38; --text-muted: #5A7080;
-  }
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--off-white);
-    min-height: 100vh;
-    display: flex; flex-direction: column;
-  }
-
-  /* TOP BAR */
-  .topbar {
-    background: var(--teal); color: var(--white);
-    text-align: center; padding: 10px 5%;
-    font-size: 0.88rem; font-weight: 600;
-    display: flex; align-items: center; justify-content: center; gap: 20px;
-    flex-wrap: wrap;
-  }
-  .topbar a { color: var(--white); text-decoration: none; font-weight: 700; }
-  .topbar-phone {
-    display: inline-flex; align-items: center; gap: 7px;
-    background: rgba(255,255,255,0.2);
-    padding: 5px 14px; border-radius: 100px;
-    font-size: 0.95rem; font-weight: 700;
-  }
-
-  /* NAV */
-  nav {
-    background: var(--navy);
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 16px 5%;
-    border-bottom: 1px solid rgba(14,184,168,0.2);
-  }
-  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--white); }
-  .nav-logo span { color: var(--teal); }
-
-  /* MAIN */
-  main {
-    flex: 1;
-    display: flex; align-items: center; justify-content: center;
-    padding: 60px 5%;
-  }
-  .thank-you-card {
-    background: var(--white);
-    border-radius: 20px;
-    padding: 56px 48px;
-    max-width: 560px; width: 100%;
-    text-align: center;
-    box-shadow: 0 20px 60px rgba(13,33,55,0.1);
-    border: 1.5px solid #E5EFF2;
-    animation: popIn 0.5s cubic-bezier(0.175,0.885,0.32,1.275) both;
-  }
-  @keyframes popIn { from{opacity:0;transform:scale(0.9) translateY(20px)} to{opacity:1;transform:scale(1) translateY(0)} }
-
-  .checkmark-wrap {
-    width: 80px; height: 80px; border-radius: 50%;
-    background: var(--teal-light);
-    display: flex; align-items: center; justify-content: center;
-    margin: 0 auto 28px;
-    animation: scaleIn 0.4s 0.2s cubic-bezier(0.175,0.885,0.32,1.275) both;
-  }
-  @keyframes scaleIn { from{transform:scale(0)} to{transform:scale(1)} }
-  .checkmark { font-size: 2.2rem; }
-
-  h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem; font-weight: 900;
-    color: var(--navy); margin-bottom: 14px;
-  }
-  .sub {
-    font-size: 1rem; color: var(--text-muted); line-height: 1.7;
-    margin-bottom: 32px;
-  }
-  .sub strong { color: var(--text); }
-
-  .next-steps {
-    background: var(--off-white);
-    border-radius: 12px; padding: 24px;
-    text-align: left; margin-bottom: 28px;
-  }
-  .next-steps h3 {
-    font-size: 0.85rem; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 1px;
-    color: var(--teal); margin-bottom: 14px;
-  }
-  .next-step-item {
-    display: flex; align-items: flex-start; gap: 12px;
-    font-size: 0.92rem; color: var(--text);
-    margin-bottom: 10px; line-height: 1.5;
-  }
-  .next-step-item:last-child { margin-bottom: 0; }
-  .step-dot {
-    width: 22px; height: 22px; border-radius: 50%;
-    background: var(--teal); color: var(--white);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 0.72rem; font-weight: 700;
-    flex-shrink: 0; margin-top: 1px;
-  }
-
-  .contact-options {
-    display: flex; flex-direction: column; gap: 10px;
-    margin-bottom: 28px;
-  }
-  .contact-btn {
-    display: flex; align-items: center; justify-content: center; gap: 8px;
-    padding: 13px 24px; border-radius: 8px;
-    font-weight: 600; font-size: 0.95rem;
-    text-decoration: none; transition: all 0.2s;
-  }
-  .contact-btn.primary { background: var(--teal); color: var(--white); }
-  .contact-btn.primary:hover { background: var(--teal-dark); }
-  .contact-btn.secondary { background: var(--off-white); color: var(--navy); border: 1.5px solid #DDE8EC; }
-  .contact-btn.secondary:hover { border-color: var(--teal); color: var(--teal); }
-
-  .back-link {
-    color: var(--text-muted); font-size: 0.88rem;
-    text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
-  }
-  .back-link:hover { color: var(--teal); }
-
-  /* FOOTER */
-  footer { background: var(--navy); color: rgba(255,255,255,0.5); text-align: center; padding: 20px 5%; font-size: 0.82rem; }
-  footer strong { color: var(--teal); }
-
-  @media (max-width: 600px) {
-    .thank-you-card { padding: 36px 24px; }
-    h1 { font-size: 1.6rem; }
-  }
-</style>
-<link rel="canonical" href="https://eslwithbrian.com/thank-you.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#060810;--dark:#0C0F1A;--dark-2:#111624;
+  --white:#fff;--off:#F8FAFF;
+  --text:#0C0F1A;--muted:#6B7280;--border:#E5E7EB;
+  --accent:#6366F1;--accent-dark:#4F52D1;
+  --accent-light:#EEF2FF;--accent-glow:rgba(99,102,241,0.25);
+  --green:#10B981;--green-light:rgba(16,185,129,0.1);
+  --teal:#06B6D4;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--off);
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* TOPBAR */
+.topbar{
+  background:var(--accent);
+  padding:9px 5%;
+  display:flex;align-items:center;justify-content:center;
+  gap:20px;flex-wrap:wrap;
+}
+.topbar-text{font-size:.8rem;color:rgba(255,255,255,.85);font-weight:500}
+.topbar-phone{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(255,255,255,.15);color:#fff;
+  font-weight:700;font-size:.85rem;
+  padding:4px 14px;border-radius:100px;
+  text-decoration:none;transition:background .2s;
+}
+.topbar-phone:hover{background:rgba(255,255,255,.25)}
+
+/* NAV */
+nav{
+  background:rgba(6,8,16,.96);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 5%;height:60px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.nav-logo{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:1.1rem;font-weight:800;color:#fff;
+  text-decoration:none;display:flex;align-items:center;gap:6px;
+}
+.nav-logo-dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+
+/* MAIN */
+main{
+  flex:1;display:flex;align-items:center;
+  justify-content:center;padding:48px 5%;
+}
+
+/* CARD */
+.card{
+  background:var(--white);
+  border-radius:20px;
+  padding:48px 44px;
+  max-width:580px;width:100%;
+  box-shadow:0 20px 60px rgba(0,0,0,.08);
+  border:1px solid var(--border);
+  animation:popIn .5s cubic-bezier(.175,.885,.32,1.275) both;
+}
+@keyframes popIn{from{opacity:0;transform:scale(.93) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+
+/* CHECK ICON */
+.check-wrap{
+  width:72px;height:72px;border-radius:50%;
+  background:var(--green-light);
+  border:2px solid rgba(16,185,129,.25);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 24px;
+  animation:scaleIn .4s .15s cubic-bezier(.175,.885,.32,1.275) both;
+}
+@keyframes scaleIn{from{transform:scale(0)}to{transform:scale(1)}}
+.check-icon{font-size:1.8rem;line-height:1}
+
+/* HEADING */
+.card h1{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:1.75rem;font-weight:800;
+  color:var(--text);margin-bottom:10px;
+  text-align:center;letter-spacing:-.02em;
+}
+.card .sub{
+  font-size:.95rem;color:var(--muted);
+  line-height:1.7;margin-bottom:28px;
+  text-align:center;
+}
+.card .sub strong{color:var(--text);font-weight:600}
+
+/* PAYMENT BOX — most important section */
+.payment-box{
+  background:linear-gradient(135deg,rgba(99,102,241,.06),rgba(6,182,212,.04));
+  border:1.5px solid rgba(99,102,241,.2);
+  border-radius:14px;padding:24px;
+  margin-bottom:24px;
+}
+.payment-box-title{
+  display:flex;align-items:center;gap:8px;
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:.82rem;font-weight:700;
+  color:var(--accent);
+  text-transform:uppercase;letter-spacing:.8px;
+  margin-bottom:16px;
+}
+.payment-amount{
+  display:flex;align-items:baseline;gap:4px;
+  margin-bottom:16px;
+}
+.payment-amount .amount{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:2.2rem;font-weight:800;color:var(--text);
+}
+.payment-amount .per{
+  font-size:.85rem;color:var(--muted);
+}
+.gcash-detail{
+  background:rgba(255,255,255,.7);
+  border:1px solid var(--border);
+  border-radius:10px;padding:14px 16px;
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:12px;
+  flex-wrap:wrap;gap:8px;
+}
+.gcash-label{font-size:.75rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+.gcash-number{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:1.15rem;font-weight:800;color:var(--text);
+  letter-spacing:.5px;
+}
+.gcash-name{font-size:.82rem;color:var(--muted);margin-top:2px}
+.copy-btn{
+  background:var(--accent-light);color:var(--accent);
+  border:1px solid rgba(99,102,241,.2);
+  padding:6px 14px;border-radius:6px;
+  font-size:.75rem;font-weight:600;
+  cursor:pointer;transition:all .2s;white-space:nowrap;
+  font-family:'Inter',sans-serif;
+}
+.copy-btn:hover{background:var(--accent);color:#fff}
+.copy-btn.copied{background:var(--green-light);color:var(--green);border-color:rgba(16,185,129,.2)}
+
+/* STEPS */
+.steps-box{
+  background:var(--off);
+  border-radius:12px;padding:20px;
+  margin-bottom:24px;
+}
+.steps-title{
+  font-size:.75rem;font-weight:700;
+  color:var(--muted);text-transform:uppercase;
+  letter-spacing:.8px;margin-bottom:14px;
+}
+.step-item{
+  display:flex;align-items:flex-start;gap:12px;
+  font-size:.88rem;color:var(--text);
+  margin-bottom:10px;line-height:1.5;
+}
+.step-item:last-child{margin-bottom:0}
+.step-num{
+  min-width:22px;height:22px;border-radius:50%;
+  background:var(--accent);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.68rem;font-weight:700;flex-shrink:0;
+  margin-top:1px;
+}
+.step-item a{color:var(--accent);font-weight:600;text-decoration:none}
+.step-item a:hover{text-decoration:underline}
+
+/* IMPORTANT NOTE */
+.note-box{
+  background:#FFFBEB;
+  border:1px solid rgba(245,158,11,.2);
+  border-radius:10px;padding:12px 16px;
+  font-size:.82rem;color:#92400E;
+  line-height:1.6;margin-bottom:24px;
+  display:flex;align-items:flex-start;gap:8px;
+}
+.note-icon{flex-shrink:0;font-size:1rem;margin-top:1px}
+
+/* CONTACT BUTTONS */
+.contact-btns{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.cbtn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 20px;border-radius:9px;
+  font-weight:600;font-size:.9rem;
+  text-decoration:none;transition:all .2s;
+  font-family:'Inter',sans-serif;
+}
+.cbtn.primary{
+  background:var(--accent);color:#fff;
+  box-shadow:0 4px 14px var(--accent-glow);
+}
+.cbtn.primary:hover{background:var(--accent-dark);transform:translateY(-1px)}
+.cbtn.secondary{
+  background:var(--off);color:var(--text);
+  border:1.5px solid var(--border);
+}
+.cbtn.secondary:hover{border-color:var(--accent);color:var(--accent)}
+
+/* BACK LINK */
+.back-link{
+  display:flex;align-items:center;justify-content:center;
+  gap:5px;color:var(--muted);font-size:.83rem;
+  text-decoration:none;transition:color .2s;
+}
+.back-link:hover{color:var(--accent)}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  border-top:1px solid rgba(255,255,255,.06);
+  padding:18px 5%;text-align:center;
+}
+footer p{font-size:.77rem;color:rgba(255,255,255,.28)}
+footer strong{color:var(--accent)}
+
+@media(max-width:600px){
+  .card{padding:32px 22px}
+  .card h1{font-size:1.5rem}
+  .payment-amount .amount{font-size:1.8rem}
+  .gcash-detail{flex-direction:column;align-items:flex-start}
+}
+</style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N32DR69S"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N32DR69S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
+<!-- TOPBAR -->
 <div class="topbar">
-  <span>Questions? Reach Brian directly:</span>
+  <span class="topbar-text">Questions? Contact Brian directly:</span>
   <a href="tel:+639516247863" class="topbar-phone">📱 0951-624-7863</a>
 </div>
 
+<!-- NAV -->
 <nav>
-  <div class="nav-logo">ESL<span>with</span>Brian</div>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-dot"></div>
+    ESLwithBrian
+  </a>
 </nav>
 
+<!-- MAIN -->
 <main>
-  <div class="thank-you-card">
-    <div class="checkmark-wrap">
-      <span class="checkmark">✓</span>
+  <div class="card">
+
+    <!-- SUCCESS ICON -->
+    <div class="check-wrap">
+      <span class="check-icon">✓</span>
     </div>
 
-    <h1>Message Received!</h1>
+    <h1>Request Received!</h1>
     <p class="sub">
-      Thanks for reaching out, <strong>Brian will reply within 24 hours.</strong>
-      In the meantime, here's what happens next:
+      Your coaching session request has been submitted.
+      <strong>Complete your GCash payment below</strong> to confirm your slot.
+      Brian will send your Calendly booking link within 2 hours of payment confirmation.
     </p>
 
-    <div class="next-steps">
-      <h3>What Happens Next</h3>
-      <div class="next-step-item">
-        <div class="step-dot">1</div>
-        <span>Brian reviews your message and confirms your preferred session time.</span>
+    <!-- PAYMENT BOX -->
+    <div class="payment-box">
+      <div class="payment-box-title">💳 Complete Your Payment</div>
+      <div class="payment-amount">
+        <span class="amount">₱399</span>
+        <span class="per">/ 1 hour session</span>
       </div>
-      <div class="next-step-item">
-        <div class="step-dot">2</div>
-        <span>You'll receive payment instructions via GCash: <strong>0951-624-7863</strong></span>
-      </div>
-      <div class="next-step-item">
-        <div class="step-dot">3</div>
-        <span>Once paid, your coaching session or course access is confirmed. Your ESL journey begins!</span>
+
+      <div class="gcash-detail">
+        <div>
+          <div class="gcash-label">GCash Number</div>
+          <div class="gcash-number" id="gcash-num">0951-624-7863</div>
+          <div class="gcash-name">Brian Macapobre</div>
+        </div>
+        <button class="copy-btn" onclick="copyGcash()" id="copy-btn">Copy Number</button>
       </div>
     </div>
 
-    <div class="contact-options">
-      <a href="tel:+639516247863" class="contact-btn primary">📞 Call Brian Now — 0951-624-7863</a>
-      <a href="mailto:macapobrebrian535@gmail.com" class="contact-btn secondary">✉ macapobrebrian535@gmail.com</a>
+    <!-- STEPS -->
+    <div class="steps-box">
+      <div class="steps-title">What to do after paying</div>
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <span>Open GCash → Send ₱399 to <strong>0951-624-7863</strong> (Brian Macapobre)</span>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <span>Screenshot your GCash payment confirmation</span>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <span>Email the screenshot to <a href="mailto:macapobrebrian535@gmail.com">macapobrebrian535@gmail.com</a> with subject: <strong>"Payment — ESL Coaching"</strong></span>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <span>Brian sends your personal Calendly booking link within <strong>2 hours</strong></span>
+      </div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <span>Pick your preferred session time and confirm — your ESL coaching journey begins!</span>
+      </div>
+    </div>
+
+    <!-- WARNING NOTE -->
+    <div class="note-box">
+      <span class="note-icon">⚠️</span>
+      <span>Your slot is <strong>not confirmed</strong> until payment is received and verified. Sessions are booked on a first-paid, first-served basis.</span>
+    </div>
+
+    <!-- CONTACT BUTTONS -->
+    <div class="contact-btns">
+      <a href="mailto:macapobrebrian535@gmail.com?subject=Payment — ESL Coaching&body=Hi Brian, I have sent my GCash payment. Please find my screenshot attached." class="cbtn primary">
+        ✉ Email Payment Screenshot to Brian
+      </a>
+      <a href="tel:+639516247863" class="cbtn secondary">
+        📞 Call Brian — 0951-624-7863
+      </a>
     </div>
 
     <a href="index.html" class="back-link">← Back to ESLwithBrian.com</a>
+
   </div>
 </main>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 <strong>ESL with Brian</strong> · Made with ♥ in the Philippines 🇵🇭</p>
+  <p>© 2026 <strong>ESL with Brian</strong> · Brian Macapobre · Licensed Professional Teacher · Philippines 🇵🇭</p>
 </footer>
+
+<script>
+function copyGcash() {
+  const num = '09516247863';
+  navigator.clipboard.writeText(num).then(function() {
+    const btn = document.getElementById('copy-btn');
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(function() {
+      btn.textContent = 'Copy Number';
+      btn.classList.remove('copied');
+    }, 2000);
+  }).catch(function() {
+    // Fallback for older browsers
+    const el = document.createElement('textarea');
+    el.value = num;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    const btn = document.getElementById('copy-btn');
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(function() {
+      btn.textContent = 'Copy Number';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+</script>
 
 </body>
 </html>
