@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eslwithbrian.com/sitemap.xml
+Sitemap: https://www.englishwithbrian.com/sitemap.xml
